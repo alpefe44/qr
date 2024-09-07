@@ -47,7 +47,7 @@ function MyCustomTab({ state, descriptors, navigation }: any) {
                         <TouchableOpacity
                             key={index}
                             onPress={onPress}
-                            style={index === 1 ? { borderWidth: isFocused ? 1 : .1, borderRadius: 50, paddingHorizontal: 16, paddingVertical: 16, alignItems: 'center', justifyContent: 'center', bottom: 8 } : styles.tabButton}
+                            style={index === 1 ? { borderWidth: isFocused ? 1 : .1, borderRadius: 50, paddingHorizontal: 16, paddingVertical: 16, alignItems: 'center', justifyContent: 'center' , bottom : 25 , backgroundColor : 'white' } : styles.tabButton}
                         >
                             <ButtonfIcon
                                 icon={index === 0 ? 'home' : index === 1 ? 'qr-code' : 'person'}
@@ -68,8 +68,6 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         width: '100%',
         backgroundColor: '#fff',
-        paddingBottom: 10,
-        paddingTop: 10
     },
     tabButton: {
         flexDirection: 'column',
