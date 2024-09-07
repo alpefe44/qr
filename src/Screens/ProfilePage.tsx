@@ -1,17 +1,20 @@
 //import liraries
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import CustomTextInput from '../Components/CustomTextInput';
 
 // create a component
 const ProfilePage = () => {
+
+    const [value, setValue] = useState<string>("")
+
     return (
         <View style={styles.container}>
-            <Text>ProfilePage</Text>
+            <CustomTextInput value={value} setValue={setValue}></CustomTextInput>
         </View>
     );
 };
 
-// define your styles
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -21,5 +24,4 @@ const styles = StyleSheet.create({
     },
 });
 
-//make this component available to the app
 export default ProfilePage;
