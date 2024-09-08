@@ -2,6 +2,7 @@
 import React, { Component, useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import CustomTextInput from '../Components/CustomTextInput';
+import ProfileImagePicker from '../Components/ProfileImagePicker';
 
 // create a component
 const ProfilePage = () => {
@@ -10,6 +11,7 @@ const ProfilePage = () => {
 
     return (
         <View style={styles.container}>
+            <ProfileImagePicker></ProfileImagePicker>
             <CustomTextInput value={value} setValue={setValue}></CustomTextInput>
         </View>
     );
