@@ -22,11 +22,6 @@ export default function App() {
         );
     }
 
-    function toggleCameraFacing() {
-        setFacing(current => (current === 'back' ? 'front' : 'back'));
-    }
-
-
 
     function handleBarcodeScanned(scanningResult: BarcodeScanningResult) {
         const { data } = scanningResult;
